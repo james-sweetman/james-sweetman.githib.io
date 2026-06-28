@@ -31,4 +31,16 @@
 			offset: function() { return $nav.height(); }
 		});
 
+	// Nav panel.
+		$('#navPanel').html($('#nav').navList());
+		$('#navPanel').panel({
+			delay: 500,
+			hideOnClick: true,
+			hideOnEscape: true,
+			hideOnSwipe: true,
+			resetScroll: true,
+			resetForms: true,
+			side: 'left'
+		});
+
 })(jQuery);
